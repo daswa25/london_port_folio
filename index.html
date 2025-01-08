@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="uk-flag.png" type="image/png">
+    <title>Daswa's Purple Uk</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Option 1: Include in HTML -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="custom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Jersey+10&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dca7878338.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+    <script src="custom.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <div class="navbar-brand" href="#">D25 <sup><img src="uk-flag.png" alt="" width="25"></sup> </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span><i class="fa-solid fa-satellite"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skill">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="back-cover text-white text-center py-5">
+
+        <div class="container">
+            <div class="flip-card m-auto d-block">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="daswa_portfolio.jpg" alt="Avatar"
+                            style="width:300px;height:300px; border-radius: 50%;">
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="center-portfolio">
+                            <h1>Daswadayalan</h1>
+                            <p>Msc Data Science Student</p>
+                            <p>University Of Hertfordshire, England</p>
+                            <p> Software Programmer 2022-2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 back-cover-2">
+        <div class="container">
+            <h2 class="text-center mb-4">About Me</h2>
+            <p class="text-center">I'm a Daswadayalan Myladumparai Deenadayalan but you can call me "DAS". Iam an
+                energetic
+                Web
+                Developer and Upcoming Datascientist with experience in <span>Bootstrap<i
+                        class="fa-brands fa-bootstrap"></i></span>,&nbsp;<span>Django<i
+                        class="fa-brands fa-python"></i></span>
+                <span>Php<i class="fa-brands fa-php"></i></span>. I love
+                creating Web Pages,Encryption Techniques,JavaScript Games,Data Analysis Algotithm.
+            </p>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h1 id="skill" class="text-center">Skills</h1>
+            <p class="text-center"><i class="text-center">Hover Mouse to see skill %</i></p>
+            <table class="table-responsive d-flex justify-content-center">
+                <tr onmouseenter="loaderSkill(1)" onmouseleave="reloaderSkill(1)">
+                    <td>Django &nbsp;<span><i class="fa-brands fa-python"></i></span></td>
+                    <td style="width: 500px;">
+                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 0%" id="Django"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr onmouseenter="loaderSkill(2)" onmouseleave="reloaderSkill(2)">
+                    <td>Php&nbsp;<span><i class="fa-brands fa-php"></i></span></td>
+                    <td style="width: 500px;">
+                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 0%" id="php"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr onmouseenter="loaderSkill(3)" onmouseleave="reloaderSkill(3)">
+                    <td>JavaScript&nbsp;<i class="fa-brands fa-js"></i></td>
+                    <td style="width: 500px;">
+                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 0%" id="javascript"></div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr onmouseenter="loaderSkill(5)" onmouseleave="reloaderSkill(5)">
+                    <td class="justify-content-center align-items-center">Sql&nbsp;<i class="fa-solid fa-database"></i>
+                    </td>
+                    <td style="width: 500px;">
+                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 0%" id="sql"></div>
+                        </div>
+
+                    </td>
+                </tr>
+                <tr onmouseenter="loaderSkill(6)" onmouseleave="reloaderSkill(6)">
+                    <td>Html&nbsp;<i class="fa-brands fa-html5"></i></td>
+                    <td style="width: 500px;">
+                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 0%" id="html"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr onmouseenter="loaderSkill(7)" onmouseleave="reloaderSkill(7)">
+                    <td>css&nbsp;<i class="fa-brands fa-css"></i></td>
+                    <td style="width: 500px;">
+                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 0%" id="css"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr onmouseenter="loaderSkill(8)" onmouseleave="reloaderSkill(8)">
+                    <td>Bootstrap &nbsp;<span><i class="fa-brands fa-bootstrap"></i></span></td>
+                    <td style="width: 500px;">
+                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 0%" id="sbs"></div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 back-cover-3">
+        <div class="container">
+            <h2 class="text-center mb-4">Projects</h2>
+            <div class="row">
+                <!-- Project Card 1 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="purple_project.jpeg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Portfolio Green (Basic Css)</h5>
+                            <p class="card-text">This is a basic Html and css designed static website for portfolio.
+                                The customised css and JavaScript functions.
+                                Responsive web pages where customised to all mobile phones
+                            </p>
+                            <a href="https://daswa25.github.io/daswa-portfolio-green/" class="btn btn-primary">View
+                                Project</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="purple_project.jpeg" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Stastics and Trends</h5>
+                            <p class="card-text">A Stastical Analysis of the Gym workout Analysis,where Gym workout
+                                dataset is taken.Visualized with Relation,categorical and stastical
+                                graphs using matplotlib</p>
+                            <a href="https://github.com/MDD25-Web-data-science/applied_data_science_1"
+                                class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="purple_project.jpeg" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Clustering and fitting</h5>
+                            <p class="card-text">The Palmer Archipelago is located in the icy water of antarctica is
+                                home for penguins. The birds were attracted the
+                                nature enthusiasts and scientists.</p>
+                            <a href="https://github.com/MDD25-Web-data-science/cluster_fitting_analysis"
+                                class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 contact_cover">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Me</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Your message"></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary" onclick="sendEmail()">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class=" text-white text-center py-3 contact_cover" style="box-shadow: 0px 0px 5px 0px white;">
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
